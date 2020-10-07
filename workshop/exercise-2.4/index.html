@@ -2,10 +2,21 @@
 <html>
   <head>
     <title>Exercise 2.4</title>
-    <style></style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="main" id="main"></div>
+    <header>
+      <button class="start" id="start-button" onclick="startGame()">
+        Start
+      </button>
+      <div id="timer" class="timer"></div>
+    </header>
+    <div class="main">
+      <div class="game-container" id="game-container">
+        <p class="message" id="message"></p>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

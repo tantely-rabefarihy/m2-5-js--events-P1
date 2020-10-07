@@ -7,6 +7,11 @@
 
 const getValues = (arr, key) => {
   // Insert missing solution please
+  const newArray = [];
+  arr.forEach(function (item) {
+    return newArray.push(item[key] || null);
+  });
+  return newArray;
 };
 
 // 2. Do a console.log to verify your function.

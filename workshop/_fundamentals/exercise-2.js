@@ -7,6 +7,14 @@
 
 const combineArrays = (arr1, arr2) => {
   // Insert missing solution please
+  const newArr = arr1.concat(arr2);
+  let error = false;
+  newArr.forEach((str) => {
+    if (typeof str !== "string") {
+      error = true;
+    }
+  });
+  return error ? undefined : newArr.sort();
 };
 
 // 2. Do a console.log to verify your function.
